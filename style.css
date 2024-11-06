@@ -1,0 +1,180 @@
+/* General settings for HTML and body elements */
+html, body {
+    height: 100%; /* Ensure the page takes up full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif; /* Set the main font for the page */
+    color: #d9f0ee; /* Text color for better contrast on dark background */
+    background-color: #140007; /* Dark background color */
+    background-size: cover; /* Cover the background to fill the entire viewport */
+    background-position: center; /* Center background image if applied */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+/* Header styles */
+header {
+    background: #333; /* Dark gray background */
+    color: #fff; /* White text for contrast */
+    padding: 20px 0; /* Vertical padding to increase header height */
+    text-align: center; /* Center the header text */
+}
+
+/* Navigation styles */
+nav {
+    text-align: center; /* Center the navigation */
+    margin: 20px 1px; /* Spacing around navigation */
+}
+
+.contact-form {
+    display: block;
+    margin-bottom: 20px; /* Space below the contact form */
+    text-align: center; /* Center the form */
+}
+
+/* Styles for navigation links */
+nav a {
+    background: #444; /* Background color for navigation links */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around links for better click area */
+    border-radius: 30px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth background transition */
+    text-decoration: none; /* Remove underline */
+}
+
+    /* Hover effect for navigation links */
+    nav a:hover {
+        background: #666; /* Lighter background on hover */
+    }
+
+/* Main container styles */
+.container {
+    padding: 20px; /* Padding within the container */
+}
+
+/* Styles for a section labeled "hobby" */
+.hobby {
+    font-family: 'Roboto', sans-serif; /* Font family for consistency */
+    color: #fff; /* White text color */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    margin: 20px 0; /* Space around hobby section */
+    padding: 20px; /* Padding within the section */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Display content in a row */
+    align-items: center; /* Center items vertically */
+}
+
+    /* Styles for images within the hobby section */
+    .hobby img {
+        margin-right: 15px; /* Space between image and text */
+        border-radius: 5px; /* Rounded corners for images */
+        width: 150px; /* Fixed width */
+        height: 100px; /* Fixed height */
+        object-fit: cover; /* Crop image to fit defined size */
+    }
+
+/* Footer styles */
+footer {
+    background: #333; /* Dark gray background */
+    color: #fff; /* White text */
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Vertical padding */
+    position: fixed; /* Stick footer to bottom of page */
+    bottom: 0; /* Align footer to the bottom */
+    width: 100%; /* Full-width footer */
+}
+
+/* Styling for input field with id 'numbers-input' */
+#numbers-input {
+    width: 100%; /* Full-width input */
+    max-width: 300px; /* Maximum width */
+    padding: 8px; /* Padding within input */
+    margin: 10px 0; /* Space around input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #edf3ff; /* Light background */
+}
+
+/* General button styling */
+button {
+    padding: 10px 20px; /* Padding for a larger click area */
+    margin: 5px; /* Space around button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    background-color: #007BFF; /* Blue background color */
+    color: #fff; /* White text */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+}
+
+    /* Hover effect for buttons */
+    button:hover {
+        background-color: #2887f1; /* Lighter blue on hover */
+        transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
+
+/* Styling for the todo-list container */
+.todo-list {
+    margin: 20px 0; /* Space around todo list */
+    padding: 10px; /* Padding inside todo list */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+    /* Heading within the todo list */
+    .todo-list h2 {
+        margin-top: 0; /* Remove top margin */
+    }
+
+    /* List styles within todo-list */
+    .todo-list ul {
+        list-style-type: none; /* Remove default bullets */
+        padding: 0; /* Remove default padding */
+    }
+
+        .todo-list ul li {
+            margin: 10px 0; /* Space between list items */
+        }
+
+    /* Checkbox styling within todo list */
+    .todo-list input[type="checkbox"] {
+        margin-right: 10px; /* Space between checkbox and text */
+    }
+
+/* Styles for a light theme */
+.light-theme {
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Dark text for contrast */
+}
+
+    .light-theme header,
+    .light-theme footer {
+        background-color: #f0f0f0; /* Light background for header/footer */
+        color: #333333; /* Darker text */
+    }
+
+    /* Navigation links in light theme */
+    .light-theme nav a {
+        background-color: #ddd; /* Light background for links */
+        color: #333; /* Darker text */
+    }
+
+        /* Hover effect for light theme navigation links */
+        .light-theme nav a:hover {
+            background-color: #ccc; /* Slightly darker background on hover */
+        }
+
+    /* Hobby section background for light theme */
+    .light-theme .hobby {
+        background: rgba(0, 0, 0, 0.1); /* Semi-transparent dark background */
+    }
+
+    /* Button styles in light theme */
+    .light-theme button {
+        background-color: #555555; /* Darker button background */
+        color: #ffffff; /* White text */
+    }
+
+        .light-theme button:hover {
+            background-color: #666666; /* Slightly lighter on hover */
+        }

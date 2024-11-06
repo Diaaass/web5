@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and stylesheets, including custom and Bootstrap styles for layout and design consistency -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        /* Style for flexible page height, center-aligned content, and color scheme */
+        html {
+            overflow-y: auto;
+            min-height: 120vh;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #140007;
+            color: #d9f0ee;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-size: cover;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #d9f0ee;
+            width: 100%;
+        }
+
+        .contact-info {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Button style and hover effects */
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #2887f1;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="main-title">Contact Information</h1> <!-- Main header title -->
+        <!-- Buttons for interactive features like date display and background color change -->
+        <button id="show-date">Show Date</button>
+        <button id="change-bg">Change BG Color</button>
+    </header>
+
+    <nav class="my-3">
+        <!-- Simple navigation links styled using Bootstrap classes -->
+        <a href="home.html" class="mx-3 text-decoration-none text-light">Home</a>
+        <a href="hobbies.html" class="mx-3 text-decoration-none text-light">Hobbies</a>
+    </nav>
+
+    <div class="container contact-info">
+        <!-- Contact information cards for three individuals, using Bootstrap grid for layout -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-3">
+                <h2 id="name1">Paliyev Dmitriy</h2>
+                <p><strong id="phone1">Phone:</strong> +7 777 123 4567</p>
+                <p><strong id="email1">Email:</strong> dmitriy.paliyev@example.com</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h2 id="name2">Yan Nevezhin</h2>
+                <p><strong id="phone2">Phone:</strong> +7 777 987 6543</p>
+                <p><strong id="email2">Email:</strong> yan.nevezhin@example.com</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h2 id="name3">Dias Makhatov</h2>
+                <p><strong id="phone3">Phone:</strong> +7 776 169 1840</p>
+                <p><strong id="email3">Email:</strong> dias@example.com</p>
+            </div>
+        </div>
+
+        <!-- Contact form with fields for name, email, and message -->
+        <div class="contact-form mt-4">
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <input type="text" id="message" name="message" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Our Personal Webpage</p> <!-- Footer with copyright notice -->
+    </footer>
+
+    <!-- Bootstrap JavaScript and custom script for additional functionalities -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

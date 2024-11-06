@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding, viewport settings, and linking Google Fonts and external stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Hobbies</title>
+</head>
+<body>
+    <header>
+        <!-- Main header section with page title and interactive buttons -->
+        <h3>Our Teams Hobbies</h3>
+        <div id="current-time"></div> <!-- Placeholder to display the current time dynamically -->
+        <button id="change-bg">Change BG Color</button> <!-- Button to change background color -->
+        <button id="toggle-theme">Toggle Theme</button> <!-- Button to toggle light/dark theme -->
+    </header>
+
+    <nav>
+        <!-- Navigation links to other pages -->
+        <a href="home.html">Home</a>
+        <a href="../../WEB5Final/Assignment5/contactme.html">Contact Me</a>
+    </nav>
+
+    <div class="container">
+        <!-- Container for hobbies and interactive tools -->
+        <div id="hobbies-container"></div> <!-- Placeholder for dynamically generated hobbies list -->
+        <!-- Number sorting tool section -->
+        <div>
+            <h2>Number Sorting Tool</h2>
+            <input type="text" id="numbers-input" placeholder="Enter numbers separated by commas">
+            <button id="sort-asc">Sort Ascending</button>
+            <button id="sort-desc">Sort Descending</button>
+            <p id="sorted-output"></p> <!-- Display area for sorted numbers -->
+        </div>
+
+        <!-- To-Do List section -->
+        <div class="todo-list">
+            <h2>To-Do List: Our Hobbies</h2>
+            <input type="text" id="search-task-input" placeholder="Search tasks..."> <!-- Search input for tasks -->
+            <ul id="task-list">
+                <!-- Predefined list items representing hobbies as tasks with checkboxes -->
+                <li><input type="checkbox" id="hobby1"><label for="hobby1">Reading Books</label></li>
+                <li><input type="checkbox" id="hobby2"><label for="hobby2">Playing Sports</label></li>
+                <li><input type="checkbox" id="hobby3"><label for="hobby3">Programming</label></li>
+            </ul>
+            <input type="text" id="new-task-input" placeholder="Add a new task..."> <!-- Input for adding new tasks -->
+            <button id="add-task-btn">Add Task</button>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer with copyright information -->
+        <p>&copy; 2024 Our Personal Webpage</p>
+    </footer>
+
+    <!-- External JavaScript file for interactivity, loaded after the page to ensure DOM elements are available -->
+    <script src="script.js" defer></script>
+</body>
+</html>
